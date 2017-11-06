@@ -10,7 +10,7 @@ package com.immoc.test;
  return Math.max(dp[num.length][0], dp[num.length][1]);
  }
  dp[i][1] means we rob the current house and dp[i][0] means we don't,so it is easy to convert this to O(1) space
- 
+
  public int rob(int[] num) {
  int prevNo = 0;
  int prevYes = 0;
