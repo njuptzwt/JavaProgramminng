@@ -5,7 +5,11 @@ package com.immoc.test;
  */
 enum AccountType
 {
-    SAVING, FIXED, CURRENT;
+    SAVING("sacid",0), FIXED("dsjk",1), CURRENT("sdjks",2);
+    private AccountType(String s,Integer i)
+    {
+
+    }
     private AccountType()
     {
         System.out.println("It is a account type");
