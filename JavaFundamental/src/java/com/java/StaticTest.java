@@ -6,6 +6,8 @@ import javax.naming.Name;
  * 普通的内部类可以访问外围的所有数据，包括私有数据
  * Static 关键字所有对象共同拥有的方法，类方法。Static方法中只可以访问Static方法
  * 如果要访问类的实例方法，需要new一个实例对象进行访问！！！
+ * 普通的内部类中不允许有Static的方法！！！！
+ * 内部类的静态方法只能访问外部的静态数据，非静态数据不允许！！
  * Created by 18362 on 2017/11/8.
  */
 public class StaticTest {
@@ -30,7 +32,7 @@ public class StaticTest {
         return super.equals(obj);
     }
 
-    class innerclass
+   public class innerclass
     {
         void test()
         {
@@ -39,9 +41,17 @@ public class StaticTest {
             System.out.println(sex);
             System.out.println(b);
         }
+//        public static void test3()
+//        {
+//
+//        }
     }
     static class innner2
     {
+        public static void test3()
+        {
+
+        }
         void test()
         {
             //System.out.println(name);

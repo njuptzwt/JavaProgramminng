@@ -1,6 +1,5 @@
 package com.immoc.test;
 
-import java.util.logging.Level;
 
 /**0-1背包问题的空间优化
  * Created by 18362 on 2017/11/7.
