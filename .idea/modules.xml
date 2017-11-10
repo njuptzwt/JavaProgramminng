@@ -4,8 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaFundamental/JavaFundamental.iml" filepath="$PROJECT_DIR$/JavaFundamental/JavaFundamental.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaProgramminng.iml" filepath="$PROJECT_DIR$/JavaProgramminng.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeetCode/LeetCode.iml" filepath="$PROJECT_DIR$/LeetCode/LeetCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/SortingBasic/SortingBasic.iml" filepath="$PROJECT_DIR$/SortingBasic/SortingBasic.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Test1/Test1.iml" filepath="$PROJECT_DIR$/Test1/Test1.iml" />
     </modules>
   </component>
 </project>
