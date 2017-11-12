@@ -37,6 +37,7 @@ public class MergeSortBU {
             //外层循环控制每次归并的数组的大小内层循环控制哪几个模块合并
             for (int i = 0; i + gap < length; i += 2 * gap)//这边的控制边界条件是为了控制合并的时候有两组数据，否则不合并
             {
+                if(arr[i+gap-1].compareTo(arr[i+gap])>0)//优化点
                 merge(arr, i, i + gap - 1, Math.min(i + gap + gap - 1, length - 1));//防止数组越界，因为分到后面，最后一组的个数可能要少
             }
         }
