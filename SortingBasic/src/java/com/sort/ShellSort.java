@@ -2,7 +2,7 @@ package com.sort;
 
 import java.awt.event.ComponentAdapter;
 
-/**希尔排序，插入排序的扩展
+/**希尔排序，插入排序的扩展，时间复杂度也比较低
  * 可以通过d来使得序列提前变得近乎有序
  * 可以大大减小插入排序的时间
  * d的选取，一般取得是length/2;直到length=1就结束循环
