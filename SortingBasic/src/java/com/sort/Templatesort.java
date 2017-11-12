@@ -31,22 +31,30 @@ public class Templatesort {
     }
 
     public static void main(String args[]) {
-        Integer a[] = {1, 23, 43, 34, 2, 12, 34, 2, 23, 47, 8, 9};//不能使用int,float等数据类型，要使用Integer,Double,Float等包装类实现了Comparble接口
-        sort(a);
-        for(int i:a)
-            System.out.print(i+" ");
-        Double d[]={21.3,32.89,12.32,123.23,12.23,121.12,23.34,23.434,3.34};
-        sort(d);
-        for(Double te:d)
-            System.out.print(te+" ");
-        Student []st=new Student[5];
-        st[0]=new Student("sdhj",23);
-        st[1]=new Student("we",2435);
-        st[2]=new Student("sdh435",35);
-        st[3]=new Student("353wer",345);
-        st[4]=new Student("fs",543);
-        sort(st);
-        for(Student s:st)
-            System.out.println(s.getScore()+" "+s.getName());
+        Integer arr[]=new Integer[10000];
+        arr=SelectSortHelper.generateRandomArray(10000,1,10000);
+        SelectSortHelper.testSort(arr,"com.sort.Templatesort");
+//        Integer a[] = {1, 23, 43, 34, 2, 12, 34, 2, 23, 47, 8, 9};//不能使用int,float等数据类型，要使用Integer,Double,Float等包装类实现了Comparble接口
+//        sort(a);
+//        for(int i:a)
+//            System.out.print(i+" ");
+//        Double d[]={21.3,32.89,12.32,123.23,12.23,121.12,23.34,23.434,3.34};
+//        sort(d);
+//        for(Double te:d)
+//            System.out.print(te+" ");
+//        Student []st=new Student[5];
+//        st[0]=new Student("sdhj",23);
+//        st[1]=new Student("we",2435);
+//        st[2]=new Student("sdh435",35);
+//        st[3]=new Student("353wer",345);
+//        st[4]=new Student("fs",543);
+//        sort(st);
+//        for(Student s:st)
+//            System.out.println(s.getScore()+" "+s.getName());
+//
+//        Integer b[]=SelectSortHelper.generateRandomArray(10,10,100);
+//        SelectSortHelper.printArray(b);
+//        sort(b);
+//        SelectSortHelper.printArray(b);
     }
 }
