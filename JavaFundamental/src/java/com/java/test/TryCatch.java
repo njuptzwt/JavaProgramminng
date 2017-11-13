@@ -10,6 +10,7 @@ public class TryCatch {
     {
         int a=1;
         try {
+            System.exit(0);
             return  a;
         }
         finally {
