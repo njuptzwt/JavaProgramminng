@@ -34,7 +34,8 @@ public class QuickSort {
     }
     public static void main(String args[])
     {
-        Integer a[]=SelectSortHelper.generateRandomArray(1000000,1,100000);
+        //Integer a[]=SelectSortHelper.generateNearlyOrderedArray(1000000,100);
+        Integer a[]=SelectSortHelper.generateRandomArray(1000000,1,1000000);
         SelectSortHelper.testSort(a,"com.sort.QuickSort");
     }
 }

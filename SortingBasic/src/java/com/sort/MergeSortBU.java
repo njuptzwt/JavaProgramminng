@@ -30,7 +30,7 @@ public class MergeSortBU {
         }
     }
     //自底向上的解决思路！！和动态规划联系起来
-    private static void sort(Comparable[] arr) {
+    public static void sort(Comparable[] arr) {
         int length = arr.length;
         int gap = 1;
         for (; gap <= length; gap = gap * 2) {
@@ -44,8 +44,8 @@ public class MergeSortBU {
     }
     public static void main(String args[])
     {
-        Integer a[]=SelectSortHelper.generateRandomArray(100,1,100);
-        sort(a);
-        SelectSortHelper.printArray(a);
+        int N = 500000;
+        Integer[] arr = SelectSortHelper.generateNearlyOrderedArray(N,10);
+        SelectSortHelper.testSort(arr, "com.sort.MergeSortBU");
     }
 }
