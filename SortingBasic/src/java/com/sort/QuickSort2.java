@@ -1,6 +1,6 @@
 package com.sort;
 
-/**双路排序解决大量重复键值的方案
+/**双路排序解决大量重复键值的方案（快排的非等大小数组缺陷解决！！！）
  * Created by 18362 on 2017/11/13.
  */
 public class QuickSort2 {
