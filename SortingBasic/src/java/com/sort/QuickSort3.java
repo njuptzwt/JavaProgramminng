@@ -22,7 +22,7 @@ public class QuickSort3 {
         swap(arr, l, rand);
         Comparable temp = arr[l];
         int i = l + 1;
-        while (i <= r && i < gt) {
+        while ( i < gt) {//循环条件的控制可以取到节省时间的作用！！
             if (arr[i].compareTo(temp) < 0) {
                 swap(arr, lt + 1, i);
                 lt++;
@@ -35,7 +35,7 @@ public class QuickSort3 {
         }
         swap(arr, l, lt);
         quickSort(arr, l, lt - 1);
-        quickSort(arr, gt, r);//下表边界的处理！！！很重要
+        quickSort(arr, gt, r);//下标边界的处理！！！很重要
     }
 
     public static void insertionSort(Comparable[] arr, int l, int r) {
@@ -60,7 +60,7 @@ public class QuickSort3 {
         // 三路快速排序算法也是一个O(nlogn)复杂度的算法
         // 可以在1秒之内轻松处理100万数量级的数据
         int N = 1000000;
-        Integer[] arr = SelectSortHelper.generateRandomArray(N, 0, 100000);
+        Integer[] arr = SelectSortHelper.generateRandomArray(N, 0,100000);
         SelectSortHelper.testSort(arr, "com.sort.QuickSort3");
 
         return;

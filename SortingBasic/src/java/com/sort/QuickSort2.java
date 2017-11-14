@@ -69,7 +69,7 @@ public class QuickSort2 {
         int N = 1000000;
         Integer[] arr = SelectSortHelper.generateRandomArray(N, 0, 100000);
         Integer[] arr1=SelectSortHelper.generateRandomArray(N,1,10);//体现双路排序的优点
-        SelectSortHelper.testSort(arr1,"com.sort.QuickSort2");
+        SelectSortHelper.testSort(arr,"com.sort.QuickSort2");
 //        Integer arr[]=SelectSortHelper.generateRandomArray(20,1,100);
 //        sort(arr);
 //        SelectSortHelper.printArray(arr);
