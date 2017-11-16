@@ -48,7 +48,7 @@ public class MinHeap <T extends Comparable>{
         shiftDown(1);
         return res;
     }
-    private void shiftUp(int index)
+    public void shiftUp(int index)
     {
         //Comparable temp=data[index];
         while(index>1)//防止死循环
@@ -63,7 +63,7 @@ public class MinHeap <T extends Comparable>{
         }
     }
     //最小堆的重排序！！
-    private void shiftDown(int index)
+    public void shiftDown(int index)
     {
         while(2*index<=count)
         {
