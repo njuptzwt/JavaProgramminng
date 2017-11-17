@@ -111,6 +111,36 @@ public class BST<Key extends Comparable, Value extends Comparable> {
         else
             return search(root.leftnode,key);
     }
+    //二叉树的前序遍历，对以node为根的二叉树进行前序遍历,先访问中间节点，在访问左节点，最后访问右节点
+    public void preOrder(Node node)
+    {
+        if(node!=null)
+        {
+            System.out.println(node.value);
+            preOrder(node.leftnode);
+            preOrder(node.rightnode);
+        }
+    }
+    //二叉树的中序遍历，对以node为节点的二叉树进行中序遍历，先访问左节点，后访问中间节点，再访问右节点
+    public void midOrder(Node node)
+    {
+        if(node!=null)
+        {
+            midOrder(node.leftnode);
+            System.out.println(node.value);
+            midOrder((node.rightnode));
+        }
+    }
+    //二叉树的后序遍历，先左后右，最后再中间.对以node为根节点的二叉树进行后序遍历！
+    public void laOrder(Node node)
+    {
+        if(node!=null)
+        {
+            laOrder(node.leftnode);
+            laOrder(node.rightnode);
+            System.out.println(node.value);
+        }
+    }
 
 }
 
