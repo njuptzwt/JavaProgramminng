@@ -12,13 +12,13 @@ public class HeapSort5 <T extends Comparable>{
     {
         int length=arr.length;
         for(int i=0;i<100;i++)
-            minHeap.insert(arr[i]);//前100个元素构造成最大堆
+            minHeap.insert(arr[i]);//前100个元素构造成最小堆
         for(int i=100;i<length;i++)
         {
             if(arr[i].compareTo(minHeap.data[1])>0)
             {
                 minHeap.data[1]=arr[i];
-                minHeap.shiftDown(1);//始终踢掉一个元素，再重新排列！保持100个
+                minHeap.shiftDown(1);//始终踢掉一个最小元素，再重新排列！保持100个
             }
         }
     }
