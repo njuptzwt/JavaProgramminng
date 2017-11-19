@@ -1,7 +1,6 @@
 package search;
 
 import java.util.LinkedList;
-import java.util.Queue;
 
 /**
  * 二叉搜索树的基本数据结构的构造
@@ -292,7 +291,38 @@ public class BST<Key extends Comparable, Value extends Comparable> {
             }
         }
     }
-
+    //找一个数据的前驱，左子树中的最大值
+    private Node pressor(Key key)
+    {
+        if(root==null)
+            return null;
+        Node node=root;
+        while(key.compareTo(node.key)!=0)
+        {
+            if(key.compareTo(node.key)>0)
+                node=node.rightnode;
+            else
+                node=node.leftnode;
+        }
+        node=Maximum(node.leftnode);
+        return node;
+    }
+    //找一个数的后继，右子树中的最小值
+    private Node successor(Key key)
+    {
+        if(root==null)
+            return null;
+        Node node=root;
+        while(key.compareTo(node.key)!=0)
+        {
+            if(key.compareTo(node.key)>0)
+                node=node.rightnode;
+            else
+                node=node.leftnode;
+        }
+        node=Minimum(node.rightnode);
+        return node;
+    }
     public static void main(String[] args) {
         Integer arr[] = {45, 12, 34, 23, 41, 56, 47, 67, 87, 90};
         BST<Integer, String> bst = new BST();

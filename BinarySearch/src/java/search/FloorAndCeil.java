@@ -49,8 +49,8 @@ public class FloorAndCeil {
     }
     public static void main(String args[])
     {
-        Integer arr[]={1,2,3,4,5,6,8,8,8,8,11,12,13,14,15,18};
-        int res=ceil(arr,9);
+        Integer arr[]={1,2,3,4,5,6,8,8,8,8,11,11,13,14,15,18};
+        int res=floor(arr,9);
         System.out.println(res);
     }
 }

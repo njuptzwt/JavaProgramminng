@@ -9,6 +9,10 @@ public class ThisTest {
     private Integer age;
     private String gender;
     private String adress;
+    public ThisTest()
+    {
+
+    }
     public ThisTest(String name,Integer age)
     {
         this.name=name;
@@ -19,6 +23,11 @@ public class ThisTest {
         this(name,age);//用this调用内部的其他构造器，必须是放在第一个语句中！！！
         this.gender=gender;
         this.adress=adress;
-
+        String str="dhjf";
+        int a=10;
+        str+=100;
+        str+=a;
+        str+='a';
+       // str+=' a';错误
     }
 }
