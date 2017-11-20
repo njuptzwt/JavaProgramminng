@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BinarySearch/BinarySearch.iml" filepath="$PROJECT_DIR$/BinarySearch/BinarySearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GraphTheroy/GraphTheroy.iml" filepath="$PROJECT_DIR$/GraphTheroy/GraphTheroy.iml" />
       <module fileurl="file://$PROJECT_DIR$/HeapBasic/HeapBasic.iml" filepath="$PROJECT_DIR$/HeapBasic/HeapBasic.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaFundamental/JavaFundamental.iml" filepath="$PROJECT_DIR$/JavaFundamental/JavaFundamental.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaProgramminng.iml" filepath="$PROJECT_DIR$/JavaProgramminng.iml" />
