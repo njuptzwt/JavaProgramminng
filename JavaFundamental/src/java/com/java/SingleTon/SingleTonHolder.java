@@ -6,6 +6,10 @@ package com.java.SingleTon;
  * Created by 18362 on 2017/11/19.
  * 这种方法使用内部类来做到延迟加载对象，在初始化这个内部类的时候，
  * JLS(Java Language Sepcification)会保证这个类的线程安全(the class initialization phase is guaranteed by the JLS to be serial)
+ *
+ * 类级的内部类，也就是静态的成员式内部类，该内部类的实例与外部类的实例 没有绑定关系，而且只是被调用到才会装载，从而实现了延迟加载
+ *
+ *
  */
 public class SingleTonHolder {
     private static class singletonholder
