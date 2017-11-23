@@ -1,5 +1,8 @@
 package search;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**floor函数当找到当前值的时候，会去找最先出现的index
  * ceil函数当找到当前值的时候，会去找最后出现的index,当不存在目标值的时候，floor返回前1，ceil返回后1
  * Created by 18362 on 2017/11/17.
@@ -49,6 +52,7 @@ public class FloorAndCeil {
     }
     public static void main(String args[])
     {
+        Map<String,Integer> map=new HashMap<>();//多态的实现，hashmap和treemap都实现了map接口可以生成对应的接口类
         Integer arr[]={1,2,3,4,5,6,8,8,8,8,11,11,13,14,15,18};
         int res=floor(arr,9);
         System.out.println(res);

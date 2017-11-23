@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/JavaProgramminng.iml" filepath="$PROJECT_DIR$/JavaProgramminng.iml" />
       <module fileurl="file://$PROJECT_DIR$/LeetCode/LeetCode.iml" filepath="$PROJECT_DIR$/LeetCode/LeetCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/SortingBasic/SortingBasic.iml" filepath="$PROJECT_DIR$/SortingBasic/SortingBasic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UnionFind/UnionFind.iml" filepath="$PROJECT_DIR$/UnionFind/UnionFind.iml" />
     </modules>
   </component>
 </project>
