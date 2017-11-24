@@ -6,7 +6,6 @@ import java.util.Vector;
  * Created by 18362 on 2017/11/21.
  */
 public class LazyPrimMST <Weight extends Number &Comparable>{
-    private WeightGraph<Weight> graph;
     private WeightGraph<Weight> G;    // 图的引用
     private MinHeap<Edge<Weight>> pq;   // 最小堆, 算法辅助数据结构
     private boolean[] marked;           // 标记数组, 在算法运行过程中标记节点i是否被访问
