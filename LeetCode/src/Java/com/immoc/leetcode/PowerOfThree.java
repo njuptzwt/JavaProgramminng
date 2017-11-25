@@ -18,7 +18,9 @@ public class PowerOfThree {
     }
     public static void main(String args[])
     {
-        int a=19201281;
-        System.out.println(isPowerOfThree(a));
+        int a=1;
+        for(int i=0;i<30;i++)
+            a*=2;
+        System.out.println(a);
     }
 }
