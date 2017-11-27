@@ -29,4 +29,9 @@ public class SpinLock {
         Thread current = Thread.currentThread();
         sign.compareAndSet(current, null);
     }
+    public static void main(String args[])
+    {
+        int a[]=null;
+        a[0]=1;
+    }
 }
