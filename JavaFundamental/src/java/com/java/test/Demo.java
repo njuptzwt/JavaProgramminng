@@ -2,11 +2,13 @@ package com.java.test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * Created by 18362 on 2017/11/26.
  */
 public class Demo {
+    public static int j=0;
     class inner
     {
 
@@ -42,6 +44,9 @@ public class Demo {
     }
     public static void main(String args[])
     {
+        Integer.valueOf("1024").intValue();
+        Scanner sc=new Scanner(System.in);
+        System.out.println(j);
         System.out.println(100%3.0);
     }
 }

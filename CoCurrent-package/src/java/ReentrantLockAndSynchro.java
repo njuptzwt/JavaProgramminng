@@ -1,3 +1,5 @@
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * Java中的可重入锁的定义，线程中的方法再调用锁的方法可以直接调用
  * ！！！好处，不容易造成死锁！！
@@ -18,5 +20,9 @@ public class ReentrantLockAndSynchro implements Runnable {
     @Override
     public void run() {
         get();
+    }
+    public static void main(String args[])
+    {
+        ReentrantLock lock=new ReentrantLock();
     }
 }
