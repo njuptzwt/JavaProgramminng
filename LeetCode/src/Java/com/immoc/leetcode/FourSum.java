@@ -46,14 +46,17 @@ public class FourSum {
     }
     public static void main(String args[])
     {
-        int []s={1, 0, -1, 0,-2, 2};
-        List<List<Integer>> res=fourSum(s,0);
-        System.out.println(res.size());
-        for(int i=0;i<res.size();i++)
-        {
-            for(int j=0;j<4;j++)
-                System.out.print(res.get(i).get(j)+" ");
-            System.out.println();
-        }
+        //int a=Integer.parseInt("12655");
+        int a=(-3%2);
+        System.out.println(a);
+//        int []s={-3,-2,-1,0,0,1,2,3};
+//        List<List<Integer>> res=fourSum(s,0);
+//        System.out.println(res.size());
+//        for(int i=0;i<res.size();i++)
+//        {
+//            for(int j=0;j<4;j++)
+//                System.out.print(res.get(i).get(j)+" ");
+//            System.out.println();
+//        }
     }
 }
